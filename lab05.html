@@ -1,0 +1,57 @@
+<!-- HTML Lab Assignment 5 -->
+<!-- Deadline: 2022-11-09 23:59 -->
+
+<!-- [10%] 1. A Table (3x3 cells) with two different background colors for <th> and <td> -->
+<!-- [20%] 2. Two buttons to control the width of the table (200px, 500 px) -->
+<!-- [20%] 3. Three buttons to control the border with and cell spacing of the table -->
+<!-- [20%] 4. Four buttons to control the background color of the table (will not affect the color of table headings)-->
+<!-- [20%] 5. A reset button to reset the style to the original.-->
+<!-- [10%] 6. Separate the JavaScript code from the html file and upload both files to github. (javascript in an external file) -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+            <table border="1" id="t">
+              <tr bgcolor="#1E90FF" style="color:white">
+                <th align="center">Math</th>
+                <th align="center">English</th>
+                <th align="center">Programming</th>
+              </tr>
+
+              <tr id="color" bgcolor="yellow">
+                <td align="center" >90</td>
+                <td align="center" >60</td>
+                <td align="center" >80</td>
+              </tr>
+
+              <tr id="color1" id="colordown" bgcolor="yellow">
+                <td align="center" >70</td>
+                <td align="center">80</td>
+                <td align="center">60</td>
+              </tr>
+
+            </table>
+      <a>表格寬度</a><br />
+      <button onclick= "Width200()">200px</button>
+      <button onclick="Width500()" >500px</button><br /><br />
+      <a>表格線大小</a><br />
+      <button onclick= "Border1px()">1px</button>
+      <button onclick= "Border10px()">10px</button>
+      <button onclick= "Border20px()">20px</button><br /><br />
+      <a>表格顏色</a><br />
+      <button style="background-color :green" onclick="Colorgreen()">green</button>
+      <button style="background-color :blue" onclick="Colorblue()" >blue</button>
+      <button style="background-color :orange" onclick="Colororange()" >orange</button>
+      <button style="background-color :red" onclick="Colorred()" >red</button><br /><br />
+      <button onclick="reset()" >reset</button>
+
+    <script src="lab05.js"></script>
+
+</body>
+
+</html>
